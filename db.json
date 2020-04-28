@@ -1,5 +1,5 @@
-{"burgers":
-  [
+{
+  "burgers": [
     {
       "id": 1,
       "name": "Good Burger",
@@ -65,6 +65,18 @@
       "name": "Cow-abunga",
       "description": "Mooooo",
       "image": "http://www.foodwithfeelings.com/wp-content/uploads/2013/06/ab44_the-fat-cow-ramsay-gordon-6-e1352887255279.jpg"
+    },
+    {
+      "name": "Bacon King",
+      "description": "The king of burgers with bacon!",
+      "image": "https://cdn.pastemagazine.com/www/articles/bacon%20king%20main%20%28Custom%29.png",
+      "id": 12
+    },
+    {
+      "name": "Dave's Triple",
+      "description": "3 stacks on racks of patty",
+      "image": "https://thumbor.thedailymeal.com/-B_7izwwz3l8wTlbGrpzvc_Wg5E=//https://www.thedailymeal.com/sites/default/files/2016/06/24/8-%20Wendys%20Daves%20Triple.jpg",
+      "id": 13
     }
   ]
 }
