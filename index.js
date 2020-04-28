@@ -17,8 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
     
     postBurger()
+    addToOrder()
+    form.reset()
+
   })
 })
+
+
 
 const headers = {
   'Content-Type': 'application/json',
@@ -36,15 +41,23 @@ function postBurger() {
     image: inputImageURL 
   }
 
+  //optimistic rendering
+  createBurgerHTML(burger)
+
   fetch(endpoint, {
     method: 'POST',
     headers,
     body: JSON.stringify(burger)
   })
-  .then(resp => resp.json())
-  .then(renderBurger)
 }
 
+function addToOrder() {
+  let li = document.createElement('li')
+  let burgerDiv = burgerMenuDiv.lastChild
+  let h3 = burgerDiv.children[0]
+  li.innerText = h3.innerText
+  burgerOrderUl.append(li)
+}
 
 const endpoint = 'http://localhost:3000/burgers';
 
@@ -60,32 +73,30 @@ function renderBurger() {
   .then(function(resp) {
     return resp.json()
   })
-  .then(createBurgerHTML)
+  .then(json => json.forEach(createBurgerHTML))
 }
 
-function createBurgerHTML(arr) {
-  arr.forEach(burger => {
-    let div = document.createElement('div')
-    div.className = 'burger'
+function createBurgerHTML(burgerObj) {
+  let div = document.createElement('div')
+  div.className = 'burger'
 
-    let h3 = document.createElement('h3')
-    h3.className = 'burger_title'
-    h3.innerText = burger.name
+  let h3 = document.createElement('h3')
+  h3.className = 'burger_title'
+  h3.innerText = burgerObj.name
 
-    let img = document.createElement('img')
-    img.src = burger.image
+  let img = document.createElement('img')
+  img.src = burgerObj.image
 
-    let p = document.createElement('p')
-    p.className = 'burger_description'
-    p.innerText = burger.description
+  let p = document.createElement('p')
+  p.className = 'burger_description'
+  p.innerText = burgerObj.description
 
-    let button = document.createElement('button')
-    button.className = 'button'
-    button.innerText = 'Add to Order'
-    button.dataset.id = burger.id
+  let button = document.createElement('button')
+  button.className = 'button'
+  button.innerText = 'Add to Order'
+  button.dataset.id = burgerObj.id
 
-    div.append(h3, img, p, button)
-    burgerMenuDiv.append(div)
-  })
+  div.append(h3, img, p, button)
+  burgerMenuDiv.append(div)
 }
 

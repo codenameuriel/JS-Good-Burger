@@ -67,16 +67,58 @@
       "image": "http://www.foodwithfeelings.com/wp-content/uploads/2013/06/ab44_the-fat-cow-ramsay-gordon-6-e1352887255279.jpg"
     },
     {
-      "name": "Bacon King",
-      "description": "The king of burgers with bacon!",
-      "image": "https://cdn.pastemagazine.com/www/articles/bacon%20king%20main%20%28Custom%29.png",
+      "name": "Five Guys Cheeseburger",
+      "description": "Classic cheeseburger",
+      "image": "https://jesspryles.com/wp-content/uploads/2015/06/melted-cheese-on-a-burger-1440x900.jpg",
       "id": 12
     },
     {
-      "name": "Dave's Triple",
-      "description": "3 stacks on racks of patty",
-      "image": "https://thumbor.thedailymeal.com/-B_7izwwz3l8wTlbGrpzvc_Wg5E=//https://www.thedailymeal.com/sites/default/files/2016/06/24/8-%20Wendys%20Daves%20Triple.jpg",
+      "name": "Whacky Burger",
+      "description": "It's the whackiest",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=550&h=550&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2013%2F06%2FHD-201204-ss-over-the-top-burgers-umami-burger.jpg",
       "id": 13
+    },
+    {
+      "name": "Supa Whacky",
+      "description": "whackiest",
+      "image": "",
+      "id": 14
+    },
+    {
+      "name": "Bacon King",
+      "description": "The king of burgers with bacon!",
+      "image": "",
+      "id": 15
+    },
+    {
+      "name": "Lots of Huggin Bear",
+      "description": "Likes to hug a lot",
+      "image": "",
+      "id": 16
+    },
+    {
+      "name": "Loch Ness",
+      "description": "Mysteriously chuckles at random",
+      "image": "",
+      "id": 17
+    },
+    {
+      "name": "Chuckles",
+      "description": "Likes to hug a lot",
+      "image": "",
+      "id": 18
+    },
+    {
+      "name": "IT",
+      "description": "Mysteriously chuckles at random",
+      "image": "",
+      "id": 19
+    },
+    {
+      "name": "Loch Ness",
+      "description": "Likes to hug a lot",
+      "image": "",
+      "id": 20
     }
   ]
 }
